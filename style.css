@@ -1,0 +1,98 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* PAGE */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f6f8;
+    padding: 40px 0;
+    color: #111827;
+}
+
+/* RESUME CONTAINER */
+.resume {
+    max-width: 900px;
+    margin: auto;
+    background: #ffffff;
+    padding: 45px 55px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+
+/* HEADER */
+.header {
+    grid-column: 1 / -1;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 18px;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.header .role {
+    font-size: 14px;
+    color: #6b7280;
+    margin: 4px 0 8px;
+}
+
+.header p {
+    font-size: 13px;
+}
+
+.column section {
+    margin-bottom: 24px;
+}
+
+h2 {
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-bottom: 1.5px solid #111827;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+}
+
+/* TEXT */
+p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #374151;
+}
+
+.strong {
+    font-weight: 600;
+}
+
+.muted {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+@media print {
+    body {
+        background: none;
+        padding: 0;
+    }
+
+    .resume {
+        padding: 30px 40px;
+    }
+}
